@@ -15,5 +15,5 @@ def view(request):
             author_form_post.save()
             return HttpResponse('Success')
         else:
-            return HttpResponse('Failure')
+            return HttpResponse('Fail')
 # Create your views here.

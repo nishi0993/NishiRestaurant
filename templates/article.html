@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #form1{
+            float:left;}
+        #form2{
+            float:right;}
+    </style>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body><center>
+<body><div id="form=1">
 <form method="post" action="">
     {% csrf_token %}
 <!--    {{ author_form.as_p }}<br><br>-->
 <!--    {{ book_form }}<br>-->
-    {{ comment }}
+    {{ comment.as_p }}
     <button type="submit">Submit</button>
-</form></center>
+</form></div>
+<div id="form2">
+<form method="post" action="">
+    {% csrf_token %}
+<!--    {{ author_form.as_p }}<br><br>-->
+<!--    {{ book_form }}<br>-->
+    {{ comment.as_p }}
+    <button type="submit">Submit</button>
+</form></div>
 </body>
 </html>

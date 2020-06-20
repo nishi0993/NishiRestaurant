@@ -7,8 +7,9 @@
 <body><center>
 <form method="post" action="">
     {% csrf_token %}
-    {{ author_form.as_p }}<br><br>
-    {{ book_form }}<br>
+<!--    {{ author_form.as_p }}<br><br>-->
+<!--    {{ book_form }}<br>-->
+    {{ comment }}
     <button type="submit">Submit</button>
 </form></center>
 </body>

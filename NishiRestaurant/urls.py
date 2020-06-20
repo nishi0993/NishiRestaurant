@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Order.views import Homepage
-from Article.views import view
+from Article.views import view, formview
 urlpatterns = [
+    path('comment',formview),
     path('article',view),
     path('', Homepage),
     path('admin/', admin.site.urls),
